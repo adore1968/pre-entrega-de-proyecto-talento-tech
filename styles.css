@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#inicio,
+footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 1.5rem 2rem;
+}
+
+#inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  transition: transform 0.5s ease;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li:hover {
+  transform: translateY(-5px);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+  min-height: 100vh;
+}
+
+#productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 2rem;
+}
+
+.producto {
+  flex-basis: 275px;
+  text-align: center;
+}
+
+.producto img {
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.producto h2 {
+  margin-bottom: 1.5px;
+}
+
+.producto p {
+  margin-bottom: 0.8rem;
+}
+
+.boton {
+  border: none;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.producto .boton:hover {
+  background-color: #0056b3;
+}
+
+#reseñas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #f9f9f9;
+}
+
+.reseña {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reseña img {
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.reseña h3 {
+  text-align: center;
+  margin: 8px 0;
+  font-size: 1.5rem;
+}
+
+.reseña .stars {
+  color: #ffd700;
+}
+
+.reseña p {
+  margin-top: 3px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#contacto {
+  padding: 0 2rem;
+}
+
+#contacto form {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+#contacto form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+#contacto input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: none;
+}
+
+#contacto .boton {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  #contacto form {
+    width: 100%;
+    border: 1px solid #000;
+  }
+
+  #contacto .boton {
+    width: 100%;
+  }
+}

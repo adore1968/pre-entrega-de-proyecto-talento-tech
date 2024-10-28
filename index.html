@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre Entrega de Proyecto</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="inicio">
+      <h1>Pre Entrega de Proyecto</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#inicio">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#productos">Productos</a>
+          </li>
+
+          <li>
+            <a href="#reseñas">Reseñas</a>
+          </li>
+
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="productos">
+        <div class="producto">
+          <img src="https://placehold.co/150" alt="Producto 1" />
+          <h2>Auriculares Inalámbricos</h2>
+          <p>
+            Auriculares con sonido de alta calidad y conectividad Bluetooth.
+          </p>
+          <button type="button" class="boton">Comprar</button>
+        </div>
+
+        <div class="producto">
+          <img src="https://placehold.co/150" alt="Producto 2" />
+          <h2>Reloj Inteligente</h2>
+          <p>Monitoriza tu actividad y recibe notificaciones en tiempo real.</p>
+          <button type="button" class="boton">Comprar</button>
+        </div>
+
+        <div class="producto">
+          <img src="https://placehold.co/150" alt="Producto 3" />
+          <h2>Altavoz Portátil</h2>
+          <p>Altavoz compacto con sonido envolvente y resistente al agua.</p>
+          <button type="button" class="boton">Comprar</button>
+        </div>
+      </section>
+
+      <section id="reseñas">
+        <div class="reseña">
+          <img src="https://placehold.co/100" alt="Foto de Ana" />
+          <div>
+            <h3>Ana García</h3>
+            <div class="stars">★★★★★</div>
+            <p>
+              Me encantó este producto, superó todas mis expectativas. Lo
+              recomiendo a todos.
+            </p>
+          </div>
+        </div>
+
+        <div class="reseña">
+          <img src="https://placehold.co/100" alt="Foto de Luis" />
+          <div>
+            <h3>Luis Fernández</h3>
+            <div class="stars">★★★★☆</div>
+            <p>
+              Buena calidad, aunque podría mejorar en algunos aspectos. Sin
+              embargo, muy satisfecho.
+            </p>
+          </div>
+        </div>
+
+        <div class="reseña">
+          <img src="https://placehold.co/100" alt="Foto de Carla" />
+          <div>
+            <h3>Carla López</h3>
+            <div class="stars">★★★☆☆</div>
+            <p>
+              El producto está bien, aunque esperaba un poco más. Es aceptable
+              por el precio.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <form action="https://formspree.io/f/meoqevjp" method="POST">
+          <label htmlFor="nombre">
+            Tu nombre:
+            <input type="text" name="nombre" id="nombre" />
+          </label>
+          <label htmlFor="email">
+            Tu email:
+            <input type="email" name="email" id="email" />
+          </label>
+          <label htmlFor="mensaje">
+            Tu mensaje:
+            <textarea name="mensaje" id="mensaje"></textarea>
+          </label>
+          <button type="submit" class="boton">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
