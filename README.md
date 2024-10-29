@@ -18,3 +18,4 @@ Este proyecto consiste en una página web que incluye tres secciones principales
 - La navegación de la página cuenta con un menú con `position: fixed`, lo que permite un acceso fácil y constante a las secciones principales.
 - El pie de página (footer) proporciona información adicional y enlaces relevantes.
 
+![Proyecto alojado en github page](https://github.com/user-attachments/assets/4208d165-006c-4234-ad9e-31112157bc22)
