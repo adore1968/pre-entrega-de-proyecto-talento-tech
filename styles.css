@@ -19,6 +19,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 nav ul {
@@ -47,6 +51,7 @@ main {
   gap: 2rem;
   padding: 2rem 0;
   min-height: 100vh;
+  margin-top: 86.4px;
 }
 
 #productos {
@@ -54,7 +59,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   flex: 1;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .producto {
@@ -63,6 +68,8 @@ main {
 }
 
 .producto img {
+  max-width: 200px;
+  min-height: 250px;
   margin-bottom: 5px;
   border-radius: 10px;
 }
@@ -72,6 +79,7 @@ main {
 }
 
 .producto p {
+  font-size: 1.1rem;
   margin-bottom: 0.8rem;
 }
 
@@ -86,7 +94,7 @@ main {
   transition: background-color 0.3s;
 }
 
-.producto .boton:hover {
+.boton:hover {
   background-color: #0056b3;
 }
 
@@ -109,6 +117,9 @@ main {
 .reseña img {
   border-radius: 100%;
   margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .reseña h3 {
@@ -117,12 +128,14 @@ main {
   font-size: 1.5rem;
 }
 
-.reseña .stars {
+.fa-star {
+  font-size: 0.8rem;
   color: #ffd700;
 }
 
 .reseña p {
-  margin-top: 3px;
+  font-size: 1.1rem;
+  margin-top: 5px;
 }
 
 footer p {
@@ -135,7 +148,7 @@ footer p {
 }
 
 #contacto form {
-  width: 50%;
+  max-width: 675px;
   margin: 0 auto;
   background-color: #f2f2f2;
   padding: 1.5rem;
@@ -145,32 +158,42 @@ footer p {
 #contacto form label {
   display: block;
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 #contacto input,
 textarea {
   width: 100%;
-  padding: 0.5rem;
-  margin-top: 5px;
+  padding: 1rem;
+  margin-top: 6px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   resize: none;
+  outline: none;
+  border: none;
+}
+
+#contacto textarea {
+  min-height: 150px;
 }
 
 #contacto .boton {
   display: block;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
+  font-size: 1.4rem;
+  padding: 1rem 0;
 }
 
-@media (max-width: 480px) {
-  #contacto form {
-    width: 100%;
-    border: 1px solid #000;
+@media screen and (max-width: 675px) {
+  #contacto form label {
+    font-size: 1.2rem;
   }
 
+  #contacto input,
+  textarea,
   #contacto .boton {
-    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }
